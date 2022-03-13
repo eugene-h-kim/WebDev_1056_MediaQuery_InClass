@@ -1,0 +1,427 @@
+
+/* body {
+   font-family: Helvetica, Arial, sans-serif;
+} */
+
+
+/* --- Expample 1 / wrap - nowrap --- */
+
+/* .container {
+   margin: 0 auto;
+   background-color: #efefef;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   max-width: 1200px;
+}
+
+.box {
+   background-color: #8ea86e;
+   color: #fff;
+   border-radius: 5px;
+   padding: 20px;
+   text-align: center;
+   margin: 10px;
+   width: 100px;
+} */
+
+
+/* --- Expample 2 / wrap - wrap --- */
+
+/* .container {
+   margin: 0 auto;
+   background-color: #efefef;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   max-width: 1200px;
+}
+
+.box {
+   background-color: #8ea86e;
+   color: #fff;
+   border-radius: 5px;
+   padding: 20px;
+   text-align: center;
+   margin: 10px;
+   width: 100px;
+} */
+
+
+/* --- Expample 3 / wrap - wrap-reverse --- */
+
+/* .container {
+   margin: 0 auto;
+   background-color: #efefef;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap-reverse;
+   max-width: 1200px;
+}
+
+.box {
+   background-color: #8ea86e;
+   color: #fff;
+   border-radius: 5px;
+   padding: 20px;
+   text-align: center;
+   margin: 10px;
+   width: 100px;
+} */
+
+
+/* --- Expample 4 / order --- */
+
+/* .container {
+   margin: 0 auto;
+   background-color: #efefef;
+   display: flex;
+   flex-direction: row;
+   max-width: 1200px;
+}
+
+.box {
+   background-color: #8ea86e;
+   color: #fff;
+   border-radius: 5px;
+   padding: 20px;
+   text-align: center;
+   margin: 10px;
+   width: 100px;
+}
+
+.box3 {
+   order: -1;  /* will place at start
+   order: 0;   /* default value
+   order: 1;   /* will place at end
+} */
+
+
+/* --- Expample 5 / flex-grow --- */
+
+/* .container {
+   margin: 0 auto;
+   background-color: #efefef;
+   display: flex;
+   flex-direction: row;
+   max-width: 1200px;
+   flex-wrap: wrap;
+}
+
+.box {
+   background-color: #8ea86e;
+   color: #fff;
+   border-radius: 5px;
+   padding: 20px;
+   text-align: center;
+   margin: 10px;
+   flex-grow: 2;
+} */
+
+
+/* --- Expample 6 / flex-grow --- */
+
+/* .container {
+   margin: 0 auto;
+   background-color: #efefef;
+   display: flex;
+   flex-direction: row;
+   max-width: 1200px;
+   flex-wrap: wrap;
+}
+
+.box {
+   background-color: #8ea86e;
+   color: #fff;
+   border-radius: 5px;
+   padding: 20px;
+   text-align: center;
+   margin: 10px;
+
+   flex-grow: 1;
+}
+
+.box3 {
+   flex-grow: 2;
+} */
+
+
+/* --- Expample 7 / flex-shrink --- */
+
+/* .container {
+   margin: 0 auto;
+   background-color: #efefef;
+   display: flex;
+   flex-direction: row;
+   max-width: 1200px;
+}
+
+.box {
+   background-color: #8ea86e;
+   color: #fff;
+   border-radius: 5px;
+   padding: 20px;
+   text-align: center;
+   margin: 10px;
+   width: 200px;
+}
+
+.box2 {
+   flex-shrink: 0; /* box 2 will refuse to shrink pase 200px
+} */
+
+
+/* --- Expample 8 / flex-basis --- */
+
+/* .container {
+   margin: 0 auto;
+   background-color: #efefef;
+   display: flex;
+   flex-direction: row;
+   max-width: 1200px;
+}
+
+.box {
+   background-color: #8ea86e;
+   color: #fff;
+   border-radius: 5px;
+   padding: 20px;
+   text-align: center;
+   margin: 10px;
+   flex: 0 0 200px;
+} */
+
+/* They all have a flex-grow value of 0,
+flex-shrink of 0,
+and flex-basis of 200px
+Therefore, they do not grow to fill the flex container;
+if it becomes smaller than the total size needed to display
+the items, they'll overflow. */
+
+
+/* --- Expample 9 / flex-basis --- */
+
+/* .container {
+   margin: 0 auto;
+   background-color: #efefef;
+   display: flex;
+   flex-direction: row;
+   max-width: 1200px;
+}
+
+.box {
+   background-color: #8ea86e;
+   color: #fff;
+   border-radius: 5px;
+   padding: 20px;
+   text-align: center;
+   margin: 10px;
+   flex: 1 0 200px;
+} */
+
+/*
+flex-grow
+flex-shrink
+flex-basis 
+*/
+
+/* in this example, because flex grow is set to 1, all the space will be filled
+however as we scale down, the boxes will not shrink past 200px, thus we still
+have overlap */
+
+
+/* --- Expample 10 / flex-basis --- */
+
+/* .container {
+   margin: 0 auto;
+   background-color: #efefef;
+   display: flex;
+   flex-direction: row;
+   max-width: 1200px;
+   flex-wrap: wrap;
+}
+
+.box {
+   background-color: #8ea86e;
+   color: #fff;
+   border-radius: 5px;
+   padding: 20px;
+   text-align: center;
+   margin: 10px;
+   flex: 1 1 200px;
+} */
+
+/*
+flex-grow
+flex-shrink
+flex-basis 
+*/
+
+/* what is happening? */
+
+
+/* --- Expample 11 / flex-basis --- */
+
+/* .container {
+   margin: 0 auto;
+   background-color: #efefef;
+   display: flex;
+   flex-direction: row;
+   max-width: 1200px;
+   flex-wrap: wrap;
+}
+
+.box {
+   background-color: #8ea86e;
+   color: #fff;
+   border-radius: 5px;
+   padding: 20px;
+   text-align: center;
+   margin: 10px;
+   flex: 1 0 0;
+}
+
+.box1 {
+   flex: 2 0 0;
+} */
+
+/*
+flex-grow
+flex-shrink
+flex-basis
+*/
+
+
+/* --- Expample 12 / flex-basis --- */
+
+/* .container {
+   margin: 0 auto;
+   background-color: #efefef;
+   display: flex;
+   flex-direction: row;
+   max-width: 1200px;
+   flex-wrap: wrap;
+}
+
+.box {
+   background-color: #8ea86e;
+   color: #fff;
+   border-radius: 5px;
+   padding: 20px;
+   text-align: center;
+   margin: 10px;
+   flex: 1 1 auto;
+}
+
+.box4 {
+   width: 400px;
+} */
+
+/*
+flex-grow
+flex-shrink
+flex-basis
+*/
+
+
+/* --- Expample 13 / flex-block-build --- */
+
+/* .container {
+   margin: 0 auto;
+   background-color: #efefef;
+   max-width: 1200px;
+}
+
+.box {
+   background-color: #8ea86e;
+   color: #fff;
+   border-radius: 5px;
+   padding: 20px;
+   text-align: center;
+   margin: 10px;
+}
+
+.logo {
+   width: 100px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+@media screen and (min-width: 600px) {
+
+   #mainHeader {
+
+   }
+
+} */
+
+
+/* --- Expample 14 / hw-example --- */
+
+body {
+   font-family: Helvetica, Arial, sans-serif;
+}
+
+.container {
+   margin: 0 auto;
+   background-color: #efefef;
+   display: flex;
+   flex-direction: column;
+   max-width: 1140px;
+   /* flex-wrap: wrap; */
+}
+
+.box {
+   color: #fff;
+   padding: 20px;
+   text-align: center;
+   margin: 10px;
+   flex: 1 1 auto;
+   height: 400px;
+}
+
+.box1 {
+   background-color: pink;
+}
+
+.box2 {
+   background-color: red;
+}
+
+.box3 {
+   display: none;
+}
+
+.box4 {
+   display: none;
+}
+
+
+@media screen and (min-width: 641px) {
+
+   .container {
+      flex-direction: row;
+   }
+
+   .box1 {
+      background-color: blue;
+   }
+
+   .box2 {
+      background-color: purple;
+   }
+
+   .box3 {
+      display: block;
+      background-color: grey;
+   }
+
+   .box4 {
+      display: block;
+      background-color: brown;
+   }
+
+}
+
+
+
